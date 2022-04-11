@@ -13,7 +13,7 @@ export default NextAuth({
 
       credentials: {
         email: { label: "email", type: "text", placeholder: "foo@example.com" },
-        password: { label: "Password", type: "password" },
+        password: { label: "Password", type: "password", placeholder: "*****" },
       },
       async authorize(credentials, req) {
         await dbConnect();
